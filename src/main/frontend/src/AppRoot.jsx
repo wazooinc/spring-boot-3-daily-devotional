@@ -20,7 +20,6 @@ const AppRoot = () => {
         <div className="row">
           <div className="col">
             <h1 className="text-center display-1">Daily Devotional</h1>
-            <h3 className="text-center fst-italic">{data.title}</h3>
             <hr />
           </div>
         </div>

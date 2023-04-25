@@ -23,8 +23,6 @@ public class Devotional implements Serializable {
   @GeneratedValue(strategy = GenerationType.SEQUENCE)
   Long id;
 
-  String title;
-
   String quote;
 
   String author;
@@ -42,8 +40,8 @@ public class Devotional implements Serializable {
 
   @Override
     public String toString() {
-        return String.format("Devotional{id=%d, title='%s', imagePath='%s', quote='%s', author='%s', content='%s', createdAt='%s', updatedAt='%s', publishedAt='%s'}",
-                id, title, imagePath, quote, author, content, createdAt, updatedAt, publishedAt);
+        return String.format("Devotional{id=%d, imagePath='%s', quote='%s', author='%s', content='%s', createdAt='%s', updatedAt='%s', publishedAt='%s'}",
+                id, imagePath, quote, author, content, createdAt, updatedAt, publishedAt);
     }
 
   
