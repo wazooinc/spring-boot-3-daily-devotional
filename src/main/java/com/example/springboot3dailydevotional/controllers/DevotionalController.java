@@ -47,7 +47,4 @@ public class DevotionalController {
     
     return new ResponseEntity<>(map, HttpStatus.OK);
   }
-
-
-  
 }

@@ -27,7 +27,7 @@ public class DevotionalService {
     return devotionalRepository.findAll();
   }
 
-  public Devotional saveDaily(Devotional devotional) {
+  public Devotional save(Devotional devotional) {
     if (devotional.getId() == null) {
       devotional.setCreatedAt(LocalDateTime.now());
     }
@@ -35,5 +35,5 @@ public class DevotionalService {
     devotional.setUpdatedAt(LocalDateTime.now());
     return devotionalRepository.save(devotional);
   }
-  
+
 }
